@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="databasepath">
+  <database-model serializer="dbm" rdbms="HSQLDB" format-version="4.4">
+    <root id="1"/>
+    <database id="2" parent="1" name="PUBLIC">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="INFORMATION_SCHEMA"/>
+    <schema id="4" parent="2" name="PUBLIC">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="5" parent="2" name="SYSTEM_LOBS"/>
+    <table id="6" parent="4" name="DOCTORS"/>
+    <table id="7" parent="4" name="PACIENTS"/>
+    <table id="8" parent="4" name="RECIPES"/>
+    <column id="9" parent="6" name="ID">
+      <Position>1</Position>
+      <DataType>BIGINT(64)|-5</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="10" parent="6" name="FIRSTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="11" parent="6" name="LASTNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="12" parent="6" name="PATRONYMIC">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="13" parent="6" name="SPECIALITY">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="14" parent="6" name="SYS_PK_10092">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="15" parent="7" name="ID">
+      <Position>1</Position>
+      <DataType>BIGINT(64)|-5</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="16" parent="7" name="FIRSTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="17" parent="7" name="LASTNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="18" parent="7" name="PATRONYMIC">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="19" parent="7" name="PHONENUMBER">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="20" parent="7" name="SYS_PK_10096">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="21" parent="8" name="ID">
+      <Position>1</Position>
+      <DataType>BIGINT(64)|-5</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="22" parent="8" name="CREATIONDATE">
+      <Position>2</Position>
+      <DataType>TIMESTAMP(26)|93</DataType>
+    </column>
+    <column id="23" parent="8" name="DESCRIPTION">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="24" parent="8" name="DURATIONDATE">
+      <Position>4</Position>
+      <DataType>TIMESTAMP(26)|93</DataType>
+    </column>
+    <column id="25" parent="8" name="PRIORITY">
+      <Position>5</Position>
+      <DataType>INTEGER(32)|4</DataType>
+    </column>
+    <column id="26" parent="8" name="DOCTOR_ID">
+      <Position>6</Position>
+      <DataType>BIGINT(64)|-5</DataType>
+    </column>
+    <column id="27" parent="8" name="PACIENT_ID">
+      <Position>7</Position>
+      <DataType>BIGINT(64)|-5</DataType>
+    </column>
+    <key id="28" parent="8" name="SYS_PK_10100">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="29" parent="8" name="FK_5845L1HDRTNMKM5H6SVAUF9SV">
+      <ColNames>DOCTOR_ID</ColNames>
+      <RefSchemaName>PUBLIC</RefSchemaName>
+      <RefTableName>DOCTORS</RefTableName>
+      <RefKeyName>SYS_PK_10092</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="30" parent="8" name="FK_DKER6PXHJ3FLM6ETVUPBHV6C">
+      <ColNames>PACIENT_ID</ColNames>
+      <RefSchemaName>PUBLIC</RefSchemaName>
+      <RefTableName>PACIENTS</RefTableName>
+      <RefKeyName>SYS_PK_10096</RefKeyName>
+      <RefColNames>ID</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

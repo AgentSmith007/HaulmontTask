@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="databasepath" uuid="b4803ed7-0fbc-4bc2-93d5-ca4807a404e2">
+      <driver-ref>hsqldb.local</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.hsqldb.jdbc.JDBCDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:file:C:\Users\MRSMITH\Desktop\Haulmont\VaadLate\databasepath/alonecustom</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="DB_Task" uuid="b9fa2fdb-b4d8-4bb0-8e49-9ad8a3ef7bac">
+      <driver-ref>hsqldb.local</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.hsqldb.jdbc.JDBCDriver</jdbc-driver>
+      <jdbc-url>jdbc:hsqldb:file:$PROJECT_DIR$/../DB_Task/alonehospital</jdbc-url>
+    </data-source>
+  </component>
+</project>
